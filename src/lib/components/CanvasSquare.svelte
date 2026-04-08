@@ -2,7 +2,7 @@
     let size = $state(50)
     let color = $state("#ff3e00")
 
-    let canvas = document.querySelector("canvas")
+    let canvas
 
     const context = canvas.getContext("2d")
     context.clearRect(0, 0, canvas.width, canvas.height)
@@ -14,7 +14,7 @@
 <h3>Canvas Square</h3>
 
 <article>
-    <canvas width="100" height="100"></canvas>
+    <canvas bind:this={canvas} width="100" height="100"></canvas>
 
     <nav>
         <label>
