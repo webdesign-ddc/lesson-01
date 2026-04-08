@@ -22,11 +22,11 @@
 
     <nav>
         <label>
-            Size: <input type="range">
+            Size: <input type="range" bind:value={size}>
         </label>
 
         <label>
-            Color: <input type="color">
+            Color: <input type="color" bind:value={color}>
         </label>
     </nav>
 </article>
